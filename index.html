@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#" class="names">Hadi<span>za</span>.</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#portfolio">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">HI <br> MY NAME IS <span> MAIYAKI HADIZA</span> </h1>
+            <h3 class="head"> Front-End developer </h1>
+                <p>Hello there! I am a <span>self taught</span> /<br> <span>boot camp</span> programmer. 
+                    I am an aspiring <span>full-stack</span> developer; <br> however, my focus has been on <span>front-end</span> development and I enjoy<br> every moment of it.
+                </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="heading">ABOUT ME</h1>
+        <div id="pic">          
+            <img src="./images/IMG-20200119-WA0006.jpg" alt="">
+            <div id="intro">
+                <p>
+                    Hi there! My name is <span>Hadiza</span> and I am a<br> <span>front-end</span> developer. I remember looking<br> at websites and wondering how they were created. 
+                     Over the years, my curiosity grew and I immediately started 
+                     my journey into tech with <span>Africa Agility</span>
+                     learning front-end development. I enjoy coding
+                     out beautiful and responsive layouts. I recently joined 
+                    <br>FrontendMentor to improve my front-end skills.
+
+                </p>
+            </div>
+        </div>
+    </section> 
+
+    <section id="portfolio">
+        <h1 class="headin">PROJECTS</h1>
+        <div class="sites">
+            <h3>EDUFORD:</h3>
+            <a href="https://edu-ford-de1117.netlify.app/">https://edu-ford-de1117.netlify.app </a>
+        </div>
+        <div class="sites">
+            <h3>BOOTSTRAPIFY:</h3>
+            <a href="https://boot-strapify-428561.netlify.app/">https://boot-strapify-428561.netlify.app/ </a>
+        </div>
+        <div class="sites">
+            <h3>PORTFOLIO</h3>
+            <a href="https://port-folio-12988c.netlify.app/">https://port-folio-12988c.netlify.app/</a>
+        </div>
+    </section>
+
+  <section id="contact">
+      <h1>CONTACT</h1>
+      <form action="" class="form">
+          <input type="text" name="name" class="input" placeholder="Enter Your Name">
+          <input type="email" name="email" class="input" placeholder="Enter Your Email">
+          <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+          <input type="submit" value="SEND" id="send">
+      </form>    
+  </section>
+  <section class="footer">
+     <p>Created by Hadi<span>za</span></p>
+  </section>
+
+
+
+    <!-- Javascript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
